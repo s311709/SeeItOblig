@@ -2,8 +2,8 @@
 
 *{
 	text-decoration: none;
-	margin: none;
-	padding: none; 
+	margin: 0;
+	padding: 0; 
 	list-style: none;
 }
 
@@ -15,66 +15,106 @@
 
 
 /* CSS FOR HEADER */
-/* CODE FROM https://www.w3schools.com/howto/howto_css_responsive_header.asp
+/* CODE FROM https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp
 - HAS TO BE CHANGED/ MADE OUR OWN */
 
-
-/* Style the header with a grey background and some padding */
-.header {
-  overflow: hidden;
+/* The side navigation menu */
+#sidebar1{
+  margin: 0;
+  padding: 0;
+  width: 200px;
   background-color: #f1f1f1;
-  padding: 20px 10px;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  z-index: 1;
 }
 
-/* Style the header links */
-.header a {
-  float: left;
+
+
+/* Sidebar links */
+#sidebar1 a{
+  display: block;
   color: black;
-  text-align: center;
-  padding: 12px;
+  padding: 16px;
   text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
 }
 
-/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-.header a.logo {
-  font-size: 25px;
-  font-weight: bold;
-}
-
-/* Change the background color on mouse-over */
-.header a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Style the active/current link*/
-.header a.active {
-  background-color: dodgerblue;
+/* Active/current link */
+#sidebar1 a.active {
+  background-color: #4CAF50;
   color: white;
 }
 
-/* Float the link section to the right */
-.header-right {
-  float: right;
+/* Links on mouse-over */
+#sidebar1 a:hover:not(.active) {
+  background-color: #555;
+  color: white;
 }
 
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  #sidebar1{
+    width: 100%;
+    height: auto;
+    position: relative;
   }
-  .header-right {
+  #sidebar1 a {
+  	float: left;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  #sidebar1 a {
+    text-align: center;
     float: none;
   }
 }
-
 
 /* CSS FOR HEADER END*/
+
+
+
+/*PAGE CONTENT CSS */
+
+#bg-img{
+width: 100%;
+ position: static;
+ left: 0px;
+ top: 0px;
+ z-index: -1;
+}
+
+#bg_dark_text{
+	position: absolute;
+
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	font-weight: bold;
+	width: 50vw;
+	font-size: 60px;
+	padding: 5px;
+	padding-right: 2000px;
+	
+}
+
+#small_header{
+	font-size: 0.5em;
+}
+
+#index_header{
+	position: absolute;
+	margin-top: 0%;
+	margin-left: 200px;
+	z-index: 2;
+
+
+
+}
+
+/* CONTENT CSS END*/
+
 
 
 
@@ -86,15 +126,65 @@
 
 /*CODE FROM https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
 
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: white;
-   color: gray;
-   text-align: center;
+
+footer{
+	width: 100vw; /*to fill the screen*/
+	max-width: 100%; /* prevents horizontal overflow*/
+	display: block; /*vi vil ha en kloss*/
+	overflow: hidden; /*fordi vi skal ha noen floating elements*/
+	background-color: #f1f1f1;
+	box-sizing: border-box;
+	z-index: 2;
+	position: relative;
+	height: 70px;
+	margin-bottom: -20px;
 }
+
+footer .contact{
+	float: right;
+	padding-right: 20px;
+}
+
+footer p {
+	text-align: center;
+	padding-bottom: 5px;
+	padding-left: 6px;
+	color: black;
+	font-size: 17px;
+}
+
+
+.fa {
+	padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.8;
+}
+
+.fa-facebook {
+  background-color: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+#contact{
+	color:white;
+	font-size: 18px;
+}
+
+#byline{
+	float: left;
+}
+
 
 
 /*END FOOTER CSS*/
@@ -103,8 +193,3 @@
 
 
 
-/*ACCESSORY CSS */
-
-#bg-img{
-	width: 100%;
-}
