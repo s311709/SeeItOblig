@@ -8,212 +8,71 @@
 
 	<meta charset="UTF-8">
 
-	<!--<link rel="stylesheet" type="text/css" href="Stylesheet.css">-->
+	<link rel="stylesheet" type="text/css" href="Stylesheet.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<style type="text/css">
-	
-*{
-	text-decoration: none;
-	margin: 0;
-	padding: 0; 
-	list-style: none;
+	<style type="text/css">
+		.box .row {
+  border: 1px dotted grey;
 }
 
-	#wrapper{
-		display: grid;
-		grid-template-columns:20% 80%;
-		z-index: -1;
-	}
-
-
-	#content{
-		display: grid;
-		grid-template-columns: 50% 50%;
-		z-index: 1;
-	}
-
-	#sidebar1{
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-  z-index: 1;
+.box .index.header {
+  flex: 1 0 auto;
+  /* The above is shorthand for:
+  flex-grow: 0,
+  flex-shrink: 1,
+  flex-basis: auto
+  */
 }
 
-
-
-/* Sidebar links */
-#sidebar1 a{
-  display: block;
-  color: black;
-  padding: 16px;
-  text-decoration: none;
+.box .row.content {
+  flex: 1 1 auto;
 }
 
-/* Active/current link */
-#sidebar1 a.active {
-  background-color: #4CAF50;
-  color: white;
+.box .row.footer {
+  flex: 0 1 40px;
 }
-
-/* Links on mouse-over */
-#sidebar1 a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
-
-
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
-  #sidebar1{
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  #sidebar1 a {
-  	float: left;}
-}
-
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px) {
-  #sidebar1 a {
-    text-align: center;
-    float: none;
-  }
-}
-
-#bg-img{
-width: 100%;
- z-index: -1;
-}
-
-#bg_dark_text{
-
-	background-color: rgba(0, 0, 0, 0.5);
-	color: white;
-	font-weight: bold;
-	width: 50vw;
-	font-size: 60px;
-	padding: 5px;
-	padding-right: 2000px;
-	
-}
-
-#small_header{
-	font-size: 0.5em;
-}
-
-#index_header{
-	position: absolute;
-	margin-top: 0%;
-	margin-left: 200px;
-	z-index: 2;
-}
-
-footer{
-	width: 100vw; /*to fill the screen*/
-	max-width: 100%; /* prevents horizontal overflow*/
-	display: block; /*vi vil ha en kloss*/
-	overflow: hidden; /*fordi vi skal ha noen floating elements*/
-	background-color: #f1f1f1;
-	box-sizing: border-box;
-	z-index: 2;
-	position: relative;
-	height: 70px;
-	margin-bottom: -20px;
-}
-
-footer .contact{
-	float: right;
-	padding-right: 20px;
-}
-
-footer p {
-	text-align: center;
-	padding-bottom: 5px;
-	padding-left: 6px;
-	color: black;
-	font-size: 17px;
-}
-
-
-.fa {
-	padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.fa:hover {
-  opacity: 0.8;
-}
-
-.fa-facebook {
-  background-color: #3B5998;
-  color: white;
-}
-
-.fa-twitter {
-  background-color: #55ACEE;
-  color: white;
-}
-
-#contact{
-	color:white;
-	font-size: 18px;
-}
-
-#byline{
-	float: left;
-}
-
-
-
-</style>
+	</style>
 
 </head>
 
 <body>
 
-<div id="wrapper">
+<div class="box">
+<div id="content">
 <!--- RESPONSIVE HEADER FROM https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp
 	CAN BE CHANGED LATER ON --->
 
 <!-- ADD A DROPDOWN MENU MAYBE? -->
 
-	<div id="sidebar1">
- 		 <div id="sidebar_content">
- 	 		<a class="active" href="#home">Home</a>
- 			 <a href="#news">News</a>
- 			 <a href="#contact">Contact</a>
- 			 <a href="#about">About</a>
- 	 	</div>
-	</div>
-<img id="bg-img" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80"> 
+<div id="sidebar1">
+ 	 <div id="sidebar_content">
+ 	 	<a class="active" href="#home">Home</a>
+ 		 <a href="#news">News</a>
+ 		 <a href="#contact">Contact</a>
+ 		 <a href="#about">About</a>
+ 	 </div>
+</div>
+
 
 <!--- END RESPONSIVE  HEADER --->
-	<div id="content">
-		<div id="index_header">
-			<span id="bg_dark_text">
-				<h2 id="small_header">WE ARE UAT</h2>
-				<h1 id="big_header"></h1>
-				THINK OUTSIDE THE PIXELS
-			</span>
-		</div>
+
+<div class="index header">
+	<span id="bg_dark_text">
+		<h1 id="small_header">WE ARE UAT</h1>
+		<h2 id="big_header"></h2>
+	THINK OUTSIDE THE PIXELS
+	</span>
+</div>
 
 <!--  BACKGROUND IMAGE -->
 
 <!-- SOURCE: https://unsplash.com/photos/g1Kr4Ozfoac 
 	NEED TO BE CITED PROPERLU -->
 
-	 	
+	 <img id="bg-img" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80"> 
 		<!--<img id="bg-img" src="https://images.unsplash.com/photo-1462536943532-57a629f6cc60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80">-->
 
 
@@ -222,22 +81,18 @@ footer p {
 
 
 <!--  START FOOTER -->
-	</div>
-
 </div>
 
+<footer>
+		<div class="contact">
+			<a href = Contact.html id="contact">| Contact us </a>
+			<a href="#" id="facebook" class="fa fa-facebook"></a>
+			<a href="#" id="twitter" class="fa fa-twitter"></a>
+		</div>
+		<p id="byline">  Webpage by students: s198965 | s311709 </p>
+</footer>
 
-<div id="footer">
-	<footer>
-			<div class="contact">
-				<a href = Contact.html id="contact">| Contact us </a>
-				<a href="#" id="facebook" class="fa fa-facebook"></a>
-				<a href="#" id="twitter" class="fa fa-twitter"></a>
-			</div>
-			<p id="byline">  Webpage by students: s198965 | s311709 </p>
-	</footer>
 </div>
-
 
 <!-- END FOOTER -->
 
