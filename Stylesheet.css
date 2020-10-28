@@ -38,8 +38,7 @@
   display: block;
   color: black;
   padding: 16px;
-  text-decoration: none;
-}
+ }
 
 /* Active/current link */
 #sidebar1 a.active {
