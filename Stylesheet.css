@@ -83,7 +83,7 @@ width: 100%;
  position: static;
  left: 0px;
  top: 0px;
- z-index: -1;
+ z-index: -2;
 }
 
 #bg_dark_text{
@@ -95,7 +95,7 @@ width: 100%;
 	width: 50vw;
 	font-size: 60px;
 	padding: 5px;
-	padding-right: 2000px;
+	padding-right: 20px;
 	
 }
 
@@ -108,10 +108,10 @@ width: 100%;
 	margin-top: 0%;
 	margin-left: 200px;
 	z-index: 2;
-
-
-
 }
+
+
+
 
 /* CONTENT CSS END*/
 
