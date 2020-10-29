@@ -192,7 +192,7 @@ www.youtube.com/watch?v=0EsWoEmkHog - James Q Quick
 }
 
 
- @media only screen and (max-width: 600px) {
+ @media only screen and (max-width: 768px) {
 	 #navBar {
 		 width: 100vw;
 		 transform: translateX(-1000px);
