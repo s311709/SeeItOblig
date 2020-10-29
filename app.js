@@ -2,44 +2,26 @@ const hamburgerKnapp = document.getElementById('hamburgerKnapp');
 const navBar = document.getElementById('navBar');
 const toggle = document.getElementById('toggle');
 
+// opens/closes hamburger menu on mobile
 hamburgerKnapp.addEventListener('click', () => {
 //  console.log("button clicked");
   navBar.classList.toggle('open');
 })
 
-
-/*if $('navbar').toggle('open') {
-      $(this).toggleClass("toggle");
-    }
-    else {
-      $(this).toggleClass("hamburgerKnapp");
-    }
+// toggles color of hamburger menu symbol
+$(() => {
+  'use strict';
+  $('#hamburgerKnapp').click(function() {
+    $(this).toggleClass('toggle');
+  });
 });
 
-const toggle = document.getElementById('toggle');
- $('toggle').toggleClass('toggle', open );
-
- $('hamburgerKnapp').toggleClass(function (navBar, currentclass) {
-   if (navBar == open)
-
- }
- */
-
- $(document).ready(function() {
-   $("hamburgerKnapp").click(function() {
-     $('hamburgerKnapp').toggleClass("toggle");
-   });
- });
-
- $("navBar").toggleClass("toggle");
- // give up
-
-
+// toggles drop down menu
 $('.degrees-knapp').click(function() {
   $('nav ul .deg-vis').toggleClass("vis");
 });
 
-
+// toggles drop down menu
 $('.about-knapp').click(function() {
   $('nav ul .ab-vis').toggleClass("vis");
 });

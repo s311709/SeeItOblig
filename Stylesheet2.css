@@ -209,16 +209,16 @@ www.youtube.com/watch?v=0EsWoEmkHog - James Q Quick
 
 	 #hamburgerKnapp {
 		 display: inline-block;
-		 color: black;
+		 color: white;
 	 }
 
-	 .toggle {
-		 color: pink;
+	 #hamburgerKnapp.toggle {
+		 color: black;
 	 }
 
 
 	 #hamburgerKnapp:hover {
-		 color: ;
+		 color: #C70039;
 	 }
 
 	 body {
