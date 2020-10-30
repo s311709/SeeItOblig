@@ -48,7 +48,8 @@ body {
 
 .img_wrapper{
 	grid-column: 1/8;
-	grid-row: 1/8;/*
+	grid-row: 1/8;
+	/*
 	background-color: rgba(200,20,20,.2);
 	z-index: 1;
 	overflow: hidden;*/
