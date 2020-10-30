@@ -14,6 +14,9 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
 	</style>
 
@@ -22,20 +25,56 @@
 
 <div class="wrapper"> <!-- inneholder alt, footer og header inkl.-->
 
-<div class="nav-bar"></div>
+<div class="container">
+<div class="nav-bar">
+  <span id="hamburgerKnapp" class="fa fa-bars" ></span>
+  <nav id="navBar">
+    <div class="nav-brand">
+      <img src="UATlogo.png" alt="UAT logo">
+    </div>
 
+    <ul class="nav-items">
+      <li><a href="#">Index</a></li>
+      <li>
+        <a href="#" class="degrees-knapp"> Degrees
+        <span class="fas fa-angle-down en"></span>
+        </a>
+        <ul class="deg-vis">
+          <li><a href="#">Business</a></li>
+          <li><a href="#">Arts</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Form</a></li>
+      <li>
+        <a href="#" class="about-knapp"> About UAT
+      <span class="fas fa-caret-down to"></span>
+      </a>
+      <ul  class="ab-vis">
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Contact2</a></li>
+        <li><a href="#">Contact3</a></li>
+      </ul>
+    </ul>
+
+    <div class="footer">
+      <p> this is a footer </p>
+    </div>
+    </nav>
+    <script src="app.js"></script></div>
+</div>
 
 <div class="header">
 		<div class="one">
 			<h1>WE ARE UAT</h1>
 		</div>
-		<div class="two">	
+		<div class="two">
 			<h2>THINK OUTSIDE THE PIXELS</h2>
 		</div>
 
 </div>
 
-	
+<!-- responsive sidebar menu-->
+
 
 <div class="img_wrapper"></div> <!-- bakgrunnen er lagt inn som CSS -->
 
