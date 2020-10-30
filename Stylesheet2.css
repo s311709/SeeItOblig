@@ -12,7 +12,6 @@ body {
 	margin-left:250px;
 }
 
-
 .wrapper{
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
@@ -216,17 +215,13 @@ www.youtube.com/watch?v=0EsWoEmkHog - James Q Quick
 		 color: black;
 	 }
 
+ }
 
-	 #hamburgerKnapp:hover {
-		 color: #C70039;
-	 }
+ @media(hover: hover) and (any-pointer: fine) {
+ #hamburgerKnapp:hover {
+ 	color: #C70039;
+ }
 
-	 body {
-		 margin-left: 0;
-	 }
-	 .header {
-		 margin-top: 40px;
-	 }
  }
 
  }
