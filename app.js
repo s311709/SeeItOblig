@@ -25,10 +25,3 @@ $('.degrees-knapp').click(function() {
 $('.about-knapp').click(function() {
   $('nav ul .ab-vis').toggleClass("vis");
 });
-
-// "go back"-button on  404-page
-<script>
-function goBack() {
-  window.history.back();
-}
-</script>
