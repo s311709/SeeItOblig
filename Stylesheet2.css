@@ -10,7 +10,6 @@
 
 body {
 	margin-left:250px;
-	/*background-color: black;*/
 	height: 100%;
 }
 
@@ -187,9 +186,7 @@ nav ul .ab-vis.vis {
 	display: block;
 }
 
-/* kilde på kode om hamburgerknapp/responsiv meny for mobil:
-www.youtube.com/watch?v=0EsWoEmkHog - James Q Quick
-*/
+
 #hamburgerKnapp {
 	position: fixed;
 	top: 9px;
