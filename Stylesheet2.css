@@ -409,6 +409,15 @@ cursor: pointer;
 	}
 }
 
+@media (min-width: 1500px) {
+	.page-sizer {
+		grid-column: 1/8;
+		grid-row: 1/9;
+		z-index: -1;
+	}
+}
+
+
 @media (max-width: 800px) {
 
 	.wrapper{
