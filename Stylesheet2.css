@@ -46,10 +46,15 @@ body {
 	margin-bottom: 25px;
 }
 
+.header .one{
+	align-self: end;
+}
 
 .header .one > h1 {
 	font-size: 30px;
 	padding-left: 10%;
+	margin-bottom: 5px;
+	
 }
 
 .header .two {
@@ -60,14 +65,9 @@ body {
 
 .page-sizer{
 	grid-column: 1/8;
-	grid-row: 1/8;
-	z-index: -1;/*
-	background-color: rgba(200,20,20,.2);
-	
-	overflow: hidden;*/
-	/*  background-image: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80");
-  	background-size: cover;
-  	background-attachment: fixed;*/
+	grid-row: 1/6;
+	z-index: -1;
+
 }
 
 
