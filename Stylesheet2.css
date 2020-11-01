@@ -401,7 +401,7 @@ cursor: pointer;
 	grid-column: 3/5;
 }
 
-@media (min-width: 800px) {
+@media (max-width: 1024px) {
 	.page-sizer {
 		grid-column: 1/8;
 		grid-row: 1/8;
@@ -409,7 +409,7 @@ cursor: pointer;
 	}
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1025px) {
 	.page-sizer {
 		grid-column: 1/8;
 		grid-row: 1/9;
