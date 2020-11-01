@@ -53,7 +53,7 @@ body {
 	font-size: 30px;
 	padding-left: 10%;
 	margin-bottom: 5px;
-	
+
 }
 
 .header .two {
@@ -238,7 +238,7 @@ nav ul .ab-vis.vis {
 		 text-align: center;
 
 	 }
-		nav ul ul li a { 
+		nav ul ul li a {
 		 text-align: center;
 	 }
 
@@ -401,10 +401,16 @@ cursor: pointer;
 	grid-column: 3/5;
 }
 
-
+@media (min-width: 800px) {
+	.page-sizer {
+		grid-column: 1/8;
+		grid-row: 1/8;
+		z-index: -1;
+	}
+}
 
 @media (max-width: 800px) {
-	
+
 	.wrapper{
 	display: grid;
 	grid-template-columns: repeat(1, 4fr);
@@ -465,7 +471,7 @@ cursor: pointer;
 }
 
 @media (max-width: 550px) {
-	
+
 	.grid-container {
 		grid-template-columns: repeat (1,1fr);
 	}
@@ -520,4 +526,3 @@ cursor: pointer;
 	}
 
 }
-
